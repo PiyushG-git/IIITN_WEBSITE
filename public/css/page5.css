@@ -1,0 +1,224 @@
+#page5 {
+    height: 105vh;
+    position: relative;
+    background-color: #fff;
+    margin: 5vh 0vh 5vh 0vh;
+    /* padding: 10vh 0; */
+  }
+  
+  #campus-life {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 5rem;
+  }
+  
+  #clubs-section {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0;
+    /* background-color: blue; */
+    height: 10vh;
+    width: 30vw;
+    border-radius: 20px;
+    padding: 1.5vh 0;
+  }
+  
+  #gallery-section {
+    position: relative;
+    /* background-color: #f4f4f9; */
+    /* background-color: green; */
+    height: 90vh;
+    width: 65vw;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    flex-direction: column;
+  }
+  
+  /* Header Styling */
+  .clubs-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .clubs-container-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff5733;
+  }
+  
+  .clubs-container-header-highlight {
+    color: #4b0082;
+  }
+  
+  .clubs-container-icon {
+    font-size: 40px;
+    color: #ff5733;
+    transition: transform 0.3s;
+  }
+  
+  .clubs-container-icon:hover {
+    transform: rotate(15deg);
+  }
+  
+  /* Clubs Section */
+  .clubs-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 70vh;
+  }
+  
+  /* Club Card */
+  .club-card {
+    display: flex;
+    /* flex-direction: column; */
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .club-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .club-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .club-info {
+    height: 25vh;
+    padding: 15px;
+  }
+  
+  .club-title {
+    color: #040321;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .club-category {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 3px 10px;
+    border: 2px solid #4b0082;
+    border-radius: 20px;
+    color: #4b0082;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .club-description {
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .club-learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #035184;
+    text-decoration: none;
+  }
+  
+  .club-learn-more:hover {
+    text-decoration: underline;
+  }
+  
+  .gallery-container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gallery-title span {
+    color: #6a0dad;
+  }
+  
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .gallery-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .gallery-box {
+    flex: 1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .gallery-row:hover .gallery-box {
+    flex: 0.85;
+  }
+  
+  .gallery-row .gallery-box:hover {
+    flex: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .gallery-row {
+      flex-wrap: wrap;
+    }
+  
+    .gallery-image {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-image {
+      height: 100px;
+    }
+  }
+  
+  .gallery-links {
+    margin-top: 20px;
+  }
+  
+  .gallery-links a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2em;
+    margin: 0 10px;
+  }

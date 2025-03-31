@@ -1,0 +1,67 @@
+#page6 {
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+  }
+  
+  .stats-section {
+    padding: 5vh 0;
+    text-align: center;
+    background-color: #212331;
+    color: white;
+  }
+  
+  .counter-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .counter-innercontainer {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+  }
+  
+  .odometer {
+    font-size: 48px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  .counter-innercontainer span {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .double-line {
+    width: 60px;
+    height: 4px;
+    background-color: #ff9800;
+    margin: 10px auto;
+    position: relative;
+  }
+  
+  .double-line::before,
+  .double-line::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #ff9800;
+  }
+  
+  .double-line::before {
+    left: 15px;
+    border-radius: 10px;
+    top: -4px;
+  }
+  
+  .double-line::after {
+    left: 15px;
+    border-radius: 10px;
+    bottom: -4px;
+  }
+  

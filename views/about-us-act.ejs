@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIIT Nagpur - ACT (PPP)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316',
+                        secondary: '#64748b'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="relative w-full h-[400px] overflow-hidden">
+        <img src="https://public.readdy.ai/ai/img_res/22ce9bd4f4294ae9ff0b5124ac3a0242.jpg" 
+             alt="IIIT Nagpur Campus"
+             class="w-full h-full object-cover">
+    </header>
+
+    <nav class="container mx-auto px-4 py-4 text-sm text-gray-600">
+        <div class="flex items-center space-x-2">
+            <a href="/" class="hover:text-primary transition-colors">HOME</a>
+            <span class="text-gray-400">&gt;</span>
+            <a href="#" class="hover:text-primary transition-colors">ABOUT US</a>
+            <span class="text-gray-400">&gt;</span>
+            <span class="text-gray-900">ACT (PPP)</span>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">ACT (PPP)</h1>
+        
+        <div class="prose max-w-none">
+            <p class="text-gray-700 leading-relaxed mb-6">
+                The Indian Institute of Information Technology (IIIT), Nagpur is one of the IIIT under the Indian Institute of Information Technology (Public-Private Partnership) Act, 2017. Established with a vision to develop industry-ready talent in the field of Information Technology, IIIT Nagpur operates under a unique PPP model that brings together the government, industry partners, and academia to deliver world-class education and research opportunities.
+            </p>
+            
+            <a href="#" class="inline-block text-blue-600 hover:text-blue-800 transition-colors">
+                Click Here for more details
+            </a>
+        </div>
+    </main>
+
+    <button id="backToTop" 
+            class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 transition-opacity duration-300 cursor-pointer hover:bg-primary/90">
+        <i class="ri-arrow-up-line text-xl"></i>
+    </button>
+
+    <script>
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+            } else {
+                backToTop.style.opacity = '0';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIIT Nagpur - Institute Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a56db',
+                        secondary: '#4b5563'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-content.active { max-height: 500px; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="relative w-full h-[300px] overflow-hidden">
+        <img src="https://public.readdy.ai/ai/img_res/7772f343dfd7e760d320ef9d5b339e42.jpg" 
+             alt="IIIT Nagpur Campus" 
+             class="w-full h-full object-cover">
+    </header>
+
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center text-sm">
+                <a href="/" class="text-gray-600 hover:text-primary">HOME</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <a href="#" class="text-gray-600 hover:text-primary">ABOUT US</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-primary">INSTITUTE PROFILE</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">INSTITUTE PROFILE</h1>
+        <div class="space-y-6">
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="accordion-header cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-semibold text-gray-900">Institute Profile</h2>
+                    <i class="ri-arrow-down-s-line text-xl"></i>
+                </div>
+                <div class="accordion-content active mt-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        Indian Institute of Information Technology, Nagpur (IIIT Nagpur) is one of the 20 Indian Institutes of Information Technology established under the Public-Private Partnership Scheme by the Ministry of Education, Government of India. IIIT Nagpur has been declared as an "Institution of National Importance" under the provisions of the Indian Institute of Information Technology (Public-Private Partnership) Act, 2017.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="accordion-header cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-semibold text-gray-900">Institute's Mandate</h2>
+                    <i class="ri-arrow-down-s-line text-xl"></i>
+                </div>
+                <div class="accordion-content mt-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        The primary objective is to develop competent and capable youth imbued with the spirit of innovation and entrepreneurship with social and environmental orientation to meet the knowledge needs of the country and provide Global Leadership in Information Technology & Allied Fields.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="accordion-header cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-semibold text-gray-900">Institute's Vision</h2>
+                    <i class="ri-arrow-down-s-line text-xl"></i>
+                </div>
+                <div class="accordion-content mt-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        The institute aspires to attain the status of a top-notch institution in Information Technology and Allied Fields and to emerge as an elite Research Institution by imparting futuristic quality education of Global Standards to corroborate the status of an "Institution of National Importance".
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="accordion-header cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-semibold text-gray-900">Institute's Mission</h2>
+                    <i class="ri-arrow-down-s-line text-xl"></i>
+                </div>
+                <div class="accordion-content mt-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        To undertake socially relevant, industry-oriented in-house Research & Development programmes as well as to undertake cutting-edge research through Public-Private Participation in Information Technology & Allied Fields. The institute shall endeavor to develop innovation and entrepreneurship with social and environmental orientation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                <img src="https://public.readdy.ai/ai/img_res/1b04f21c3b3168c9be4abd461f3afb90.jpg" 
+                     alt="Ministry of Education" 
+                     class="h-24 object-contain">
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                <img src="https://public.readdy.ai/ai/img_res/6e960fd8adacf56a57accfd7d2163dba.jpg" 
+                     alt="Government of Maharashtra" 
+                     class="h-24 object-contain">
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                <img src="https://public.readdy.ai/ai/img_res/2ad5024f1fbc0eda35cdd5f6998fae53.jpg" 
+                     alt="TATA Consultancy Services" 
+                     class="h-24 object-contain">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+                
+                const icon = header.querySelector('i');
+                icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                icon.style.transition = 'transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>

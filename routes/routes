@@ -1,0 +1,35 @@
+const { Router } = require('express');
+const router = Router();
+const path = require('path');
+const events = require('../dynamic-data-json/events.json');
+const news = require('../dynamic-data-json/news.json');
+const upcomingEvents = require('../dynamic-data-json/notices/upcoming-events.json');
+const studentCorner = require('../dynamic-data-json/notices/student-corner.json');
+const scholarships = require('../dynamic-data-json/notices/scholarships.json');
+const tenders = require('../dynamic-data-json/notices/tender.json');
+
+
+router.get('/',(req,res)=>{
+  return res.redirect('/home');
+})
+
+router.get('/home', (req, res) => {
+    return res.render("home", {
+      events,
+      news,
+      upcomingEvents,
+      studentCorner,
+      tenders,
+      scholarships,
+    });
+});
+
+router.get('/home/about-us/act',(req,res)=>{
+  return res.render("about-us-act");
+})
+
+router.get('/home/about-us/insti-profile',(req,res)=>{
+  return res.render("about-us-insti-profile");
+})
+
+module.exports = router;

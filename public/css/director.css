@@ -1,0 +1,114 @@
+#direction-page {
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+    padding: 0px;
+    margin: 0;
+  }
+  /* Container */
+  .direction-page-container {
+    overflow: hidden;
+    /* max-width: 900px; */
+    width: 100%;
+  }
+  /* Message Box */
+  .direction-page-message-box {
+    display: flex;
+    flex-direction: column;
+    background: #eae6f9;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 0.6rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Image */
+  .direction-page-image-container img {
+    width: 80%;
+    overflow: hidden;
+    height: 70%;
+    object-fit: cover;
+    border: 5px solid #f5f5f5;
+    border-radius: 0px 15px 0px 15px;
+  }
+  /* Content */
+  .direction-page-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .direction-page-title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .direction-page-title-group h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a148c;
+  }
+  .direction-page-highlight {
+    color: #6a1b9a;
+  }
+  .direction-page-material-icons {
+    font-size: 25px;
+    color: #6a1b9a;
+  }
+  .direction-page-director-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  .direction-page-message {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 10px;
+  }
+  .direction-page-read-more {
+    margin-top: 10px;
+  }
+  .direction-page-read-more a {
+    text-decoration: none;
+    color: #0288d1;
+    font-weight: bold;
+  }
+  .direction-page-read-more a:hover {
+    color: #01579b;
+  }
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .direction-page-message-box {
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    .direction-page-image-container {
+        flex: 1;
+    }
+  
+    .direction-page-image-container img {
+        height: 100%;
+    }
+  
+    .direction-page-content {
+        flex: 2;
+        padding: 30px;
+    }
+  
+    .direction-page-title-group h1 {
+        font-size: 28px;
+    }
+  
+    .direction-page-message {
+        font-size: 16px;
+    }
+  }

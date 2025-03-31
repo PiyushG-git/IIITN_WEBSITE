@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2A1B5D',
+                        secondary: '#0066CC'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .testimonial-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .testimonial-track {
+            display: flex;
+            animation: scroll-testimonials 25s linear infinite;
+            width: fit-content;
+        }
+
+        .testimonial-track:hover {
+            animation-play-state: paused;
+        }
+        @keyframes scroll-testimonials {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .testimonial-card {
+            min-width: 380px;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                min-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50" style="color:black">
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-primary text-center mb-12">
+            STUDENT TESTIMONIALS
+            <div class="w-48 h-1 bg-primary mx-auto mt-2"></div>
+        </h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-track">
+                <!-- First Set -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/0fcbecacc4d8cd1eb1276cbb36bf54be.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Kartik Kinge</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey at IIIT Nagpur, the past 4 years has been absolutely amazing and the college faculty and administration have supported me and my endeavours throughout. I have taken part in National and International competitions in and outside India, the college has been very supportive to provide me with technical help from experienced faculties as well as financial aids to develop projects and cover travel costs. . </p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/0fcbecacc4d8cd1eb1276cbb36bf54be.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Kartik Kinge</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey at IIIT Nagpur, the past 4 years has been absolutely amazing and the college faculty and administration have supported me and my endeavours throughout. I have taken part in National and International competitions in and outside India, the college has been very supportive to provide me with technical help from experienced faculties as well as financial aids to develop projects and cover travel costs. . </p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/0fcbecacc4d8cd1eb1276cbb36bf54be.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Kartik Kinge</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey at IIIT Nagpur, the past 4 years has been absolutely amazing and the college faculty and administration have supported me and my endeavours throughout. I have taken part in National and International competitions in and outside India, the college has been very supportive to provide me with technical help from experienced faculties as well as financial aids to develop projects and cover travel costs. . </p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/0fcbecacc4d8cd1eb1276cbb36bf54be.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Kartik Kinge</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey at IIIT Nagpur, the past 4 years has been absolutely amazing and the college faculty and administration have supported me and my endeavours throughout. I have taken part in National and International competitions in and outside India, the college has been very supportive to provide me with technical help from experienced faculties as well as financial aids to develop projects and cover travel costs. . </p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/0fcbecacc4d8cd1eb1276cbb36bf54be.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Kartik Kinge</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey at IIIT Nagpur, the past 4 years has been absolutely amazing and the college faculty and administration have supported me and my endeavours throughout. I have taken part in National and International competitions in and outside India, the college has been very supportive to provide me with technical help from experienced faculties as well as financial aids to develop projects and cover travel costs. . </p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+
+                <!-- <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/ca6905e1feeeaa3d27dc7654319f3581.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Emily Thompson</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">The opportunities for research and innovation here are outstanding. I've had the chance to work on real-world projects and collaborate with industry experts...</p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div> -->
+
+                <!-- <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/3b6ba7c3a6b87d7c0d991fb0d6d9051f.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">David Martinez</h3>
+                            <p class="text-gray-600 italic">B.TECH ME BATCH 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">The practical exposure and industry connections have been invaluable. The placement cell provides excellent support, and the alumni network is incredibly helpful...</p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div> -->
+
+                <!-- Duplicate Set for Infinite Scroll -->
+                <!-- <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/7890b0cbbce9a6d93d8aa83efd52a6d1.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Michael Anderson</h3>
+                            <p class="text-gray-600 italic">B.TECH CSE BATCH 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">My journey here has been transformative. The faculty's dedication and cutting-edge curriculum have prepared me well for industry challenges. The collaborative environment...</p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div> -->
+
+                <!-- <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/c338677e075fbeba1db816a8e04b3529.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Emily Thompson</h3>
+                            <p class="text-gray-600 italic">B.TECH ECE BATCH 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">The opportunities for research and innovation here are outstanding. I've had the chance to work on real-world projects and collaborate with industry experts...</p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6 mx-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://public.readdy.ai/ai/img_res/398ab8ad70703d0c6b492a83b74ac6b0.jpg" 
+                             class="w-16 h-16 rounded-full border-4 border-blue-100" alt="Student">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">David Martinez</h3>
+                            <p class="text-gray-600 italic">B.TECH ME BATCH 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 line-clamp-4">The practical exposure and industry connections have been invaluable. The placement cell provides excellent support, and the alumni network is incredibly helpful...</p>
+                    <button class="text-secondary mt-2 hover:underline">Read More</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.testimonial-card button').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.testimonial-card');
+                const content = card.querySelector('p');
+                content.classList.toggle('line-clamp-4');
+                this.textContent = content.classList.contains('line-clamp-4') ? 'Read More' : 'Read Less';
+            });
+        });
+    </script>
+</body>
+</html>

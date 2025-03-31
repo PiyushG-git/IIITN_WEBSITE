@@ -1,0 +1,25 @@
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+  }
+  .scroll-container {
+    height: 300px;
+    overflow: hidden;
+  }
+  .scroll-content {
+    animation: scroll 20s linear infinite;
+  }
+  .scroll-container:hover .scroll-content {
+    animation-play-state: paused;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  .twitter-timeline {
+    height: 300px;
+    overflow-y: auto;
+  }
